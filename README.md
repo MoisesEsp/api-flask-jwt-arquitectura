@@ -24,8 +24,10 @@ El código está estructurado para ser escalable y mantenible:
 ├── .gitignore               # Exclusión de archivos sensibles e inútiles en el repositorio
 ├── empresa.db               # Base de datos local
 └── run.py                   # Archivo de arranque principal
+```
 
-🚀 Instalación y Ejecución Local
+
+## 🚀 Instalación y Ejecución Local
 Sigue estos pasos para levantar el servidor en tu propia máquina:
 
 1. Clonar el repositorio:
@@ -52,7 +54,11 @@ python run.py
 El servidor estará disponible en http://127.0.0.1:5000
 
 
-📡 Endpoints de la API
+## 📡 Endpoints de la API
 Método	Ruta	            Descripción	Requiere Auth	                        Body (JSON)
 POST	/api/auth/login	    Iniciar sesión y obtener token	❌	               {"username": "admin", "password": "..."}
 GET	    /api/empleados	    Obtener lista de todos los empleados	✅          Ninguno
+
+(Nota: Para acceder a las rutas protegidas, debes incluir el token en los headers de tu petición HTTP: Authorization: Bearer <tu_token>)
+
+
