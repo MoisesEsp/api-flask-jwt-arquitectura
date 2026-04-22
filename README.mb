@@ -1,6 +1,0 @@
-Resumen de lo que has construido:
-Blueprints: Separaste la lógica en piezas modulares (auth.py y empleados.py), permitiendo que tu proyecto pueda crecer a cientos de archivos sin colapsar.
-
-App Factory: Creaste un motor de inicialización (__init__.py) que ensambla tu aplicación de forma segura, evitando importaciones circulares.
-
-JWT (JSON Web Tokens): Protegiste tus rutas simulando un sistema de inicio de sesión real que expide credenciales temporales.
